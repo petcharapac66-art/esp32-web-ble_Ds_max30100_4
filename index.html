@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 MAX30100 Web BLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="topnav">
+    <h1>ESP32 MAX30100 Web BLE</h1>
+  </div>
+
+  <div class="card">
+    <button onclick="connectBLE()">🔗 Connect BLE</button>
+
+    <p>Heart Rate: <span id="hr">--</span> bpm</p>
+    <p>SpO₂: <span id="spo2">--</span> %</p>
+    <p>R value: <span id="r">--</span></p>
+  </div>
+
+  <div class="card">
+    <canvas id="hrChart"></canvas>
+  </div>
+
+  <div class="card">
+    <canvas id="spo2Chart"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
